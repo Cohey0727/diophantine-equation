@@ -1,4 +1,4 @@
-const MAX = 1000;
+const MAX = 2000;
 const RANGE = [1, 100];
 
 const elements = [
@@ -19,4 +19,8 @@ elements.forEach((x) => {
   });
 });
 
-console.log(result);
+for (let i = RANGE[0]; i <= RANGE[1]; i++) {
+  if (!result[i]) {
+    console.log(`${i} is not found`);
+  }
+}
